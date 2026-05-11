@@ -6,6 +6,7 @@
     --color5: #d8e2d9;
     --color6: #000000;
     --color7: #12043d;
+    --color8: #8D0D18;
 }
 
 *{
@@ -27,7 +28,8 @@ main{
 
 header{
     background:var(--color3);
-    padding:20px;
+    height: 80px;
+    padding: 20px;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -35,12 +37,12 @@ header{
 }
 
 #logo{
-    width: 15%;
+    width: 10%;
 }
 
 header nav ul{
     display:flex;
-    gap:40px;
+    gap:75px;
     list-style:none;
 }
 
@@ -49,7 +51,7 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-    color:var(--color2);
+    color:var(--color8);
 }
 
 .nav-links {
@@ -67,8 +69,20 @@ header nav ul li a:hover{
 
 footer{
     background-color: var(--color5);
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    font-size: 20px;
 }
-
+#imgfooter{
+    width:5%;
+    justify-content: center;
+}
+.dados{
+    color: rgb(133, 133, 133);
+    font-size: 15px;
+}
 .menu-hamburguer{
     display:flex;
     flex-direction:column;
@@ -89,14 +103,25 @@ footer{
 }
 
 
-@media(max-width:768px){
+@media(max-width:900px){
     header{
         position:relative;
     }
+#logo{
+    width: 20%;
+}
+#imgfooter{
+    width:10%;
+    justify-content: center;
+}
     .menu-hamburguer{
         display:flex;
         position:relative;
         z-index:1002;
+    }
+    .dados{
+    color: rgb(133, 133, 133);
+    font-size: 10px;
     }
     nav{
         display:none !important;
@@ -123,4 +148,169 @@ footer{
     .open span:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
     .open span:nth-child(2){opacity:0;}
     .open span:nth-child(3){transform:rotate(-45deg) translate(7px, -7px);}
+}
+.contato-main{
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato-container{
+    width: 100%;
+    max-width: 1000px;
+    background: #d8e2d9;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+
+.contato-info{
+    width: 45%;
+    background: linear-gradient(
+        180deg,
+        rgba(248, 159, 159, 0.507),
+        rgba(99, 64, 64, 0.507)
+    );
+    padding: 60px;
+    color: #12043d;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contato-info h1{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.contato-info p{
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.info-box{
+    margin-bottom: 30px;
+}
+
+.info-box h3{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.info-box span{
+    font-size: 18px;
+}
+
+.form-container{
+    width: 55%;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 100%;
+}
+
+form h2{
+    font-size: 42px;
+    color: #12043d;
+    margin-bottom: 40px;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.input-box label{
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #12043d;
+    font-weight: bold;
+}
+
+.input-box input,
+.input-box textarea{
+    padding: 18px;
+    border: 2px solid rgba(99, 64, 64, 0.507);
+    border-radius: 12px;
+    background: #fff;
+    font-size: 17px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus,
+.input-box textarea:focus{
+    border-color: #ff0000;
+    box-shadow: 0 0 10px rgba(255,0,0,0.2);
+}
+
+textarea{
+    min-height: 180px;
+    resize: none;
+}
+
+form button{
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 12px;
+    background: #12043d;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+form button:hover{
+    background: #ff0000;
+    transform: translateY(-3px);
+}
+
+/* RESPONSIVO */
+
+@media(max-width: 900px){
+
+    .contato-container{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .contato-info,
+    .form-container{
+        width: 80%;
+    }
+
+    .contato-info{
+        width: 400px;
+        padding: 40px;
+    }
+
+    .form-container{
+        padding: 40px;
+    }
+
+    .contato-info h1{
+        font-size: 40px;
+    }
+
+    form h2{
+        font-size: 32px;
+    }
+
+}
+html, body{
+    overflow-x: hidden;
 }

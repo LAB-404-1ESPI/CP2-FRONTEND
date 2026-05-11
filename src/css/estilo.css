@@ -6,6 +6,7 @@
     --color5: #d8e2d9;
     --color6: #000000;
     --color7: #12043d;
+    --color8: #8D0D18;
 }
 
 *{
@@ -27,7 +28,8 @@ main{
 
 header{
     background:var(--color3);
-    padding:20px;
+    height: 80px;
+    padding: 20px;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -35,12 +37,12 @@ header{
 }
 
 #logo{
-    width: 15%;
+    width: 10%;
 }
 
 header nav ul{
     display:flex;
-    gap:40px;
+    gap:75px;
     list-style:none;
 }
 
@@ -49,7 +51,7 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-    color:var(--color2);
+    color:var(--color8);
 }
 
 .nav-links {
@@ -67,8 +69,21 @@ header nav ul li a:hover{
 
 footer{
     background-color: var(--color5);
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    font-size: 20px;
+    color: var(--color7);
 }
-
+#imgfooter{
+    width:5%;
+    justify-content: center;
+}
+.dados{
+    color: rgb(133, 133, 133);
+    font-size: 15px;
+}
 .menu-hamburguer{
     display:flex;
     flex-direction:column;
@@ -89,14 +104,21 @@ footer{
 }
 
 
-@media(max-width:768px){
+@media(max-width:900px){
     header{
         position:relative;
+    }
+    #logo{
+    width: 20%;
     }
     .menu-hamburguer{
         display:flex;
         position:relative;
         z-index:1002;
+    }
+    .dados{
+    color: rgb(133, 133, 133);
+    font-size: 10px;
     }
     nav{
         display:none !important;
