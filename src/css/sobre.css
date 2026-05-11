@@ -6,6 +6,8 @@
     --color5: #d8e2d9;
     --color6: #000000;
     --color7: #12043d;
+    --color8: #363636;
+    --color9: #ffffff;
 }
 
 *{
@@ -86,6 +88,17 @@ footer{
     border-radius:10px;
     transition:0.3s;
 
+}
+
+.card{
+    background-color: var(--color8);
+    color: var(--color9);
+    border-radius: 20px;
+    width: 1000px;
+}
+
+.card img{
+    width: 500px;
 }
 
 
