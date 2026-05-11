@@ -20,3 +20,38 @@ body{
     display: flex;
     flex-direction: column;
 }
+header{
+    background:var(--color3);
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 5px 5px var(--color4);
+}
+
+#logo{
+    width: 15%;
+}
+
+header nav ul{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+header nav ul li a{
+    font-size: 35px;
+}
+
+.nav-links {
+  display: flex;
+  flex-grow: 1; 
+  justify-content: center;
+  gap: 20px; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--color7);
+    font-weight:800;
+}
