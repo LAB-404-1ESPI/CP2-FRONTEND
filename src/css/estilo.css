@@ -73,3 +73,41 @@ header nav ul li a{
     border-radius:10px;
     transition:0.3s;
 }
+
+@media(max-width:768px){
+
+    header{
+        position:relative;
+    }
+
+    .menu-hamburguer{
+        display:flex;
+        position:relative;
+        z-index:1002;
+    }
+
+    nav{
+        display:none !important;
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:var(--color5);
+        flex-direction:column;
+        padding:20px;
+        z-index:1001;
+        border-radius:20px;
+        box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+    }
+
+    nav.active{
+        display:flex !important;
+    }
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+
+}
