@@ -1,0 +1,22 @@
+:root{
+    --color1: #504821;
+    --color2: #ff0000;
+    --color3: rgba(248, 159, 159, 0.507);
+    --color4: rgba(99, 64, 64, 0.507);
+    --color5: #d8e2d9;
+    --color6: #000000;
+    --color7: #12043d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(253, 235, 195);
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
