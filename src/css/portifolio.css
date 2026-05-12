@@ -47,7 +47,7 @@ header{
 }
 
 #logo{
-    width: 10%;
+    width: 8%;
 }
 
 header nav ul{
@@ -85,6 +85,7 @@ footer{
     padding: 20px;
     font-size: 20px;
 }
+
 #imgfooter{
     width:5%;
     justify-content: center;
@@ -351,3 +352,20 @@ border: 3px solid #8D0D18;
         font-size: 15px;
     }
 } 
+
+.tabela{
+    margin-top: 20px;
+    margin-bottom: 20px; ;
+    background-color:white;
+    width: 900px; 
+    height: 300px;
+    border-radius: 20px;
+    border: 3px solid #8D0D18;
+}
+.container-tabela{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}

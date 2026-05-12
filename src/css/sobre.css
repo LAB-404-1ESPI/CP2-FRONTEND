@@ -19,7 +19,7 @@
 body{
     background-color: rgb(253, 235, 195);
     font-family: 'Times New Roman', Times, serif;
-    min-height: 100vh;
+    min-height: 150vh;
     display: flex;
     flex-direction: column;
 }
@@ -108,13 +108,20 @@ footer{
 
 .card{
     background-color: var(--color8);
-    color: var(--color9);
+    color: var(--color6);
     border-radius: 20px;
     width: 1000px;
+    padding: 20px;
+    text-align: center;
 }
 
 .card img{
-    width: 500px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+    align-items: center;
 }
 
 
@@ -160,3 +167,77 @@ footer{
     .open span:nth-child(2){opacity:0;}
     .open span:nth-child(3){transform:rotate(-45deg) translate(7px, -7px);}
 }
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.container-historia{
+    display:flex;
+    justify-content: center;
+  
+}
+.texto1{
+    padding: 20px;
+    width: 200px;
+    display:flex;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+
+}
+
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px; ;
+    background-color:white;
+    width: 300px; 
+    height: 550px;
+    border-radius: 20px;
+    border: 3px solid #8D0D18;
+
+}
+.card-historia{
+
+    margin-top: 20px;
+    margin-bottom: 20px; ;
+    background-color:white;
+    width: 1075px; 
+    height: 500px;
+    border-radius: 20px;
+    border: 3px solid #8D0D18;
+
+}
+.card-historia div{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.card div{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+ h1{
+    color: #8D0D18;
+    padding: 20px;
+    text-decoration: underline;
+ }
+
+ p{
+    color: #000000;
+ }
+ 

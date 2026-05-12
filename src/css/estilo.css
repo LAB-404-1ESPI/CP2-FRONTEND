@@ -116,10 +116,12 @@ footer{
         position:relative;
         z-index:1002;
     }
+    
     .dados{
     color: rgb(133, 133, 133);
     font-size: 10px;
     }
+
     nav{
         display:none !important;
         position:absolute;
