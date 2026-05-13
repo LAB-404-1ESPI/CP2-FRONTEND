@@ -26,10 +26,11 @@ main{
     flex: 1;
 }
 
-main p{
+main h1{
     display:flex;
     justify-content: center;
     align-items: center;
+    font-family:'Times New Roman', Times, serif ;
     gap: 20px;
     margin-top: 30px;
     font-size: 30px;
@@ -47,7 +48,7 @@ header{
 }
 
 #logo{
-    width: 8%;
+    width: 6%;
 }
 
 header nav ul{
@@ -74,7 +75,8 @@ header nav ul li a:hover{
 .nav-links a {
     text-decoration: none;
     color: var(--color5);
-    font-weight:800;
+    font-weight:200px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 footer{
@@ -179,7 +181,7 @@ footer{
 
 
 
-.card1{
+.card{
 margin-top: 20px;
 margin-bottom: 20px; ;
 background-color:white;
@@ -190,57 +192,17 @@ border: 3px solid #8D0D18;
 
 }
 
-.card1 div{
+.card div{
     display:flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.card1 img{
+.card img{
     justify-content: center;
 }
 
-.card2{
-margin-top: 20px;
-margin-bottom: 20px; ;
-background-color:white;
-width: 250px; 
-height: 450px;
-border-radius: 20px;
-border: 3px solid #8D0D18;
-}
-
-.card2 div{
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.card2 img{
-    justify-content: center;
-}
-
-.card3{
-margin-top: 20px;
-margin-bottom: 20px; ;
-background-color:white;
-width: 250px; 
-height: 450px;
-border-radius: 20px;
-border: 3px solid #8D0D18;
-}
-
-.card3 div{
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.card3 img{
-    justify-content: center;
-}
-
-.card1 button{
+.card button{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -252,54 +214,13 @@ border: 3px solid #8D0D18;
     height: 50px;
 }
 
-.card1 button:hover{
+.card button:hover{
     background-color: var(--color7);
     color: white;
     transition: 0.3s;
     cursor: pointer;
     transform: translateY(-5px);
 }
-
-.card2 button{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 20px;
-    border-radius: 30px;
-    padding: 10px;
-    width: 100px;
-    height: 50px;
-}
-
-.card2 button:hover{
-    background-color: var(--color7);
-    color: white;
-    transition: 0.3s;
-    cursor: pointer;
-    transform: translateY(-5px);
-}
-
-.card3 button{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 20px;
-    border-radius: 30px;
-    padding: 10px;
-    width: 100px;
-    height: 50px;
-}
-
-.card3 button:hover{
-    background-color: var(--color7);
-    color: white;
-    transition: 0.3s;
-    cursor: pointer;
-    transform: translateY(-5px);
-}
-
 
 .titulotemaki{
     display:flex;
@@ -333,7 +254,7 @@ border: 3px solid #8D0D18;
     font-size: 30px;
 }
 
-.card1 img{
+.card img{
     width: 100%;
     height: 200px;
     overflow: hidden;
@@ -348,6 +269,12 @@ border: 3px solid #8D0D18;
 }
 
 .card3 img{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.card4 img{
     width: 100%;
     height: 200px;
     overflow: hidden;

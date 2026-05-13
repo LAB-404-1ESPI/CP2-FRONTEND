@@ -39,7 +39,7 @@ header{
 }
 
 #logo{
-    width: 8%;
+    width: 6%;
 }
 
 header nav ul{
@@ -66,7 +66,8 @@ header nav ul li a:hover{
 .nav-links a {
     text-decoration: none;
     color: var(--color5);
-    font-weight:800;
+    font-weight:200px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 footer{
@@ -167,6 +168,14 @@ footer{
     .open span:nth-child(2){opacity:0;}
     .open span:nth-child(3){transform:rotate(-45deg) translate(7px, -7px);}
 }
+.container1{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
 
 .container{
     display:flex;
@@ -205,35 +214,46 @@ footer{
 
 }
 .card img{
-    width:100px
+    width:100px;
+    
 }
+
 .card1{
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    width: 90%;
-    padding: 20px;
+    width: 1060px;
+    padding: 0px;
 
     background: #eee;
-    border: 2px solid #b22222;
-    border-radius: 15px;
+    border: 3px solid #8D0D18;
+    border-radius: 20px;
 }
 
 .texto{
     width: 40%;
+    padding-left: 30px;
+    justify-content:center;
 }
+.texto h1{
+    color: #8D0D18;
+    padding: 20px;
+    padding-left: 55px;
+    text-decoration: underline;
+ }
 
 .imagem{
     width: 55%;
     display: flex;
     justify-content: center;
+    border-radius: 15px;
 }
 
 .imagem img{
-    width: 50%;
-    height: auto;
-    border-radius: 10px;
+    width:1000px;
+    height: 500px;
+    border-radius: 20px;
 }
 
 .card div{
@@ -252,5 +272,6 @@ footer{
 
  p{
     color: #000000;
+    font-size: 20px;
  }
  

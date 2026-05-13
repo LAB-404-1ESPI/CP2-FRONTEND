@@ -1,3 +1,4 @@
+
 :root{
     --color1: #504821;
     --color2: #ff0000;
@@ -7,14 +8,14 @@
     --color6: #000000;
     --color7: #12043d;
     --color8:rgb(46, 14, 17);
-    --background-color: rgb(253, 235, 195); 
+    --background-color: rgb(253, 235, 195);
 }
-
+ 
 *{
     margin: 0;
     padding: 0;
 }
-
+ 
 body{
     background-color:rgba(71, 68, 68, 0.88);
     font-family: 'Times New Roman', Times, serif;
@@ -22,11 +23,11 @@ body{
     display: flex;
     flex-direction: column;
 }
-
+ 
 main{
     flex: 1;
 }
-
+ 
 header{
     background:rgba(90, 16, 16, 0.88);
     height: 80px;
@@ -36,42 +37,42 @@ header{
     align-items:center;
     box-shadow:0 5px 5px var(--color4);
 }
-
+ 
 #logo{
     width: 8%;
 }
-
+ 
 header nav ul{
     display:flex;
     gap:75px;
     list-style:none;
 }
-
+ 
 header nav ul li a{
     font-size: 35px;
-    
+   
 }
-
+ 
 header nav ul li a:hover{
     color:var(--color8);
     transition: all .2s ease-out;
 }
-
+ 
 .nav-links {
   display: flex;
-  flex-grow: 1; 
+  flex-grow: 1;
   justify-content: center;
-  gap: 20px; 
-  
+  gap: 20px;
+ 
 }
-
+ 
 .nav-links a {
     text-decoration: none;
     color: var(--color5);
     font-weight:800;
-    
+   
 }
-
+ 
 footer{
     background-color: var(--color5);
     align-items: center;
@@ -81,14 +82,17 @@ footer{
     font-size: 20px;
     color: var(--color7);
 }
+ 
 #imgfooter{
     width:5%;
     justify-content: center;
 }
+ 
 .dados{
     color: rgb(133, 133, 133);
     font-size: 15px;
 }
+ 
 .menu-hamburguer{
     display:flex;
     flex-direction:column;
@@ -98,48 +102,53 @@ footer{
     cursor:pointer;
     z-index:1000;
 }
-
+ 
 .menu-hamburguer span{
     width:100%;
     height:3px;
     background:var(--color5);
     border-radius:10px;
     transition:0.3s;
-
 }
-
-
+ 
 @media(max-width:900px){
+ 
     .dados{
         color: rgb(133, 133, 133);
         font-size: 10px;
     }
-        header{
-            position:relative;
-            display:flex;
-        }
+ 
+    header{
+        position:relative;
+        display:flex;
+    }
+ 
     #logo{
         width: 20%;
     }
+ 
     .nav-links a {
         text-decoration: none;
         color: var(--color6);
         font-weight:800;
     }
+ 
     #imgfooter{
         width:10%;
         justify-content: center;
     }
+ 
     .menu-hamburguer{
         display:flex;
         position:relative;
         z-index:1002;
-
     }
+ 
     .dados{
-    color: rgb(133, 133, 133);
-    font-size: 10px;
+        color: rgb(133, 133, 133);
+        font-size: 10px;
     }
+ 
     nav{
         display:none !important;
         position:absolute;
@@ -153,84 +162,120 @@ footer{
         border-radius:20px;
         box-shadow: 0 20px 30px rgba(0,0,0,0.2);
     }
+ 
     nav.active{
         display:flex !important;
     }
+ 
     nav ul{
         flex-direction:column;
         align-items:center;
         gap:20px;
     }
-    /* EFEITO PARA TRANSFORMAR O HAMBURGUER EM X */
-    .open span:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
-    .open span:nth-child(2){opacity:0;}
-    .open span:nth-child(3){transform:rotate(-45deg) translate(7px, -7px);}
+ 
+    .open span:nth-child(1){
+        transform:rotate(45deg) translate(5px,5px);
+    }
+ 
+    .open span:nth-child(2){
+        opacity:0;
+    }
+ 
+    .open span:nth-child(3){
+        transform:rotate(-45deg) translate(7px, -7px);
+    }
 }
-
-
+ 
+/* HERO */
+ 
 #inicio{
-    
-    background: var(--color5);
     position: fixed;
     top: 0;
     left: 0;
+ 
     width: 100%;
-    height: 100%;
-    background-color:rgb(0, 0, 0);
+    height: 100vh;
+ 
+    background-color: rgb(0, 0, 0);
+ 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+ 
+    z-index: 9999;
+ 
     opacity: 1;
-    transition: opacity 2s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
-
+ 
 #imgHero{
-    width:400px;
-    height:400px;
-    animation: piscar 2s ease-in-out;
+    width:220px;
+    animation: piscar 2s infinite;
 }
-
+ 
 #titulo{
-    background:rgba(90, 16, 16, 0.88);
-    text-align:center;
-    margin-top:100px;
+    color: rgba(90, 16, 16, 0.88);
+ 
+    margin-top:15px;
+ 
     font-size:2rem;
-    text-transform:uppercase;
-    -webkit-text-fill-color:transparent;
-    background-clip:text;
-    animation: efeito 1s ease-in-out;
-    
+ 
+    letter-spacing:2px;
 }
-
-@keyframes piscar {
-    0% {
+ 
+/* BARRA */
+ 
+.barra{
+    width:260px;
+    height:10px;
+ 
+    border:1px solid rgba(90, 16, 16, 0.88);
+ 
+    border-radius:20px;
+ 
+    overflow:hidden;
+ 
+    margin-top:20px;
+}
+ 
+.progresso{
+    width:0%;
+    height:100%;
+ 
+    background:rgba(90, 16, 16, 0.88);
+ 
+    animation: carregar 3s linear forwards;
+}
+ 
+/* ANIMAÇÕES */
+ 
+@keyframes carregar{
+    from{
+        width:0%;
+    }
+ 
+    to{
+        width:100%;
+    }
+}
+ 
+@keyframes piscar{
+    0%{
+        opacity: 0.5;
+    }
+ 
+    50%{
         opacity: 1;
     }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
+ 
+    100%{
+        opacity: 0.5;
     }
 }
-
-@keyframes efeito{
-    from{
-        opacity:0;
-    }
-    to{
-        opacity:1;
-    }
+ 
+.efeito-out{
+    opacity:0;
+    pointer-events:none;
 }
-
-
-@keyframes efeito2{
-    from{
-        transform: scale(1);
-        }
-    to{
-        transform: scale(1.5);
-    }
-}
+ 
