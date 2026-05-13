@@ -38,17 +38,17 @@ main h1{
 }
 
 header{
-    background:rgba(90, 16, 16, 0.88);
+    background:rgb(66, 13, 13);
     height: 80px;
     padding: 20px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    box-shadow:0 5px 5px var(--color4);
+    box-shadow:0 5px 5px rgb(51, 51, 51);
 }
 
 #logo{
-    width: 6%;
+    width: 8%;
 }
 
 header nav ul{
@@ -75,8 +75,8 @@ header nav ul li a:hover{
 .nav-links a {
     text-decoration: none;
     color: var(--color5);
-    font-weight:200px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:500px;
+
 }
 
 footer{
@@ -148,7 +148,8 @@ footer{
         display:none !important;
         position:absolute;
         top:120px;
-        center: 0;
+        left: 50%;
+        transform: translateX(-50%);
         width:75%;
         background:var(--color5);
         flex-direction:column;
@@ -179,16 +180,14 @@ footer{
     padding: 20px;
 }
 
-
-
 .card{
-margin-top: 20px;
-margin-bottom: 20px; ;
-background-color:white;
-width: 250px; 
-height: 450px;
-border-radius: 20px;
-border: 3px solid #8D0D18;
+    margin-top: 20px;
+    margin-bottom: 20px; ;
+    background-color:white;
+    width: 250px; 
+    height: 450px;
+    border-radius: 20px;
+    border: 3px solid var(--color8);
 
 }
 
@@ -230,7 +229,7 @@ border: 3px solid #8D0D18;
     margin-top: 10px;
     font-size: 25px;
     text-align: center;
-    color: #8D0D18;
+    color: var(--color8);
 }
 
 .descricaotemaki{
@@ -250,7 +249,7 @@ border: 3px solid #8D0D18;
     margin-top: 10px;
     text-align: center;
     font-weight: bold;
-    color: #8D0D18;
+    color: var(--color8);
     font-size: 30px;
 }
 
@@ -298,10 +297,21 @@ border: 3px solid #8D0D18;
     margin-bottom: 20px; ;
     background-color:white;
     width: 900px; 
-    height: 300px;
+    height: 180px;
     border-radius: 20px;
-    border: 3px solid #8D0D18;
+    border: 3px solid var(--color8);
 }
+
+.titulotabela{
+    background-color:white;
+    width: 250px; 
+    height: 25px;
+    border-radius: 20px;
+    border: 3px solid var(--color8);
+    padding-bottom: 60px;
+}
+
+
 .container-tabela{
     display:flex;
     justify-content: center;
@@ -316,12 +326,108 @@ border: 3px solid #8D0D18;
     text-decoration:underline;
 }
 
+.titulocardapio2{
+    text-align:center;
+    text-decoration:underline;
+    font-size: 25px;
+}
+
 h2{
     font-size: 20px;
     display:inline;
     padding:15px;
 }
 
-.corh2{
-    color: #8D0D18;
+
+.persoh1{
+    padding-left: 105px;
+    padding-top: 10px;
+}
+
+.perso2h1{
+    color: var(--color8);
+    padding-top: 10px;
+    display:flex;
+    gap: 10px;
+    text-align: center;
+}
+
+.persoh2{
+    color: var(--color8);
+    padding-left: 180px;
+    padding-top: 10px;
+}
+
+#corh1{
+    color: var(--color5);
+}
+
+#esp1{
+    padding-right: 155px;
+}
+
+#esp2{
+    padding-right: 65px;
+}
+
+.container2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+
+.card2{
+margin-top: 20px;
+margin-bottom: 20px; ;
+background-color:white;
+width: 270px; 
+height: 450px;
+border-radius: 20px;
+border: 3px solid var(--color8);
+}
+
+.card3{
+margin-top: 20px;
+margin-bottom: 20px; ;
+background-color:white;
+width: 370px; 
+height: 450px;
+border-radius: 20px;
+border: 3px solid var(--color8);
+}
+
+.card4{
+margin-top: 20px;
+margin-bottom: 20px; ;
+background-color:white;
+width: 400px; 
+height: 450px;
+border-radius: 20px;
+border: 3px solid var(--color8);
+}
+
+
+.perso2h2{
+    text-decoration: underline;
+}
+
+.persoh3{
+    padding: 10px;
+    font-style: italic;
+}
+
+.persopreco{
+    color: var(--color8);
+    padding-left: 5px;
+}
+
+p{
+    padding-left: 25px;
+    font-size:15px;
+    font-style: italic;
+    text-decoration: underline;
 }
