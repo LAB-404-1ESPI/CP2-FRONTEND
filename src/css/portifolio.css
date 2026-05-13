@@ -12,6 +12,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -39,7 +40,7 @@ main h1{
 
 header{
     background:rgb(66, 13, 13);
-    height: 80px;
+    height: 100px;
     padding: 20px;
     display:flex;
     justify-content:space-between;
@@ -62,7 +63,8 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-    color:var(--color8);
+    color:rgb(46, 14, 17);
+    transition: all .2s ease-out;
 }
 
 .nav-links {
@@ -292,23 +294,65 @@ footer{
     }
 } 
 
-.tabela{
-    margin-top: 20px;
-    margin-bottom: 20px; ;
-    background-color:white;
-    width: 900px; 
-    height: 180px;
+.tabela {
+    background-color: white;
+    width: 100%;
+    max-width: 900px; 
+    margin: 20px auto;
+    padding: 20px;
     border-radius: 20px;
     border: 3px solid var(--color8);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: auto; 
 }
+
+.titulocardapio {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: var(--color6);
+}
+
+
+.grade-precos {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    width: 100%;
+    gap: 15px;
+}
+
+.item-preco {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.item-preco span:first-child {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.persopreco {
+    color: var(--color8);
+    font-weight: bold;
+    font-size: 24px;
+}
+
 
 .titulotabela{
     background-color:white;
     width: 250px; 
-    height: 25px;
-    border-radius: 20px;
+    min-height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
     border: 3px solid var(--color8);
-    padding-bottom: 60px;
+    
 }
 
 
@@ -324,12 +368,14 @@ footer{
 .titulocardapio{
     text-align:center;
     text-decoration:underline;
+    font-size: 30px;
 }
 
 .titulocardapio2{
     text-align:center;
     text-decoration:underline;
     font-size: 25px;
+    margin-bottom: 30px;
 }
 
 h2{
@@ -359,7 +405,7 @@ h2{
 }
 
 #corh1{
-    color: var(--color5);
+    color: white;
 }
 
 #esp1{
@@ -385,17 +431,17 @@ margin-top: 20px;
 margin-bottom: 20px; ;
 background-color:white;
 width: 270px; 
-height: 450px;
+height: 500px;
 border-radius: 20px;
 border: 3px solid var(--color8);
 }
 
 .card3{
 margin-top: 20px;
-margin-bottom: 20px; ;
+margin-bottom: 20px;
 background-color:white;
 width: 370px; 
-height: 450px;
+height: 500px;
 border-radius: 20px;
 border: 3px solid var(--color8);
 }
@@ -405,7 +451,7 @@ margin-top: 20px;
 margin-bottom: 20px; ;
 background-color:white;
 width: 400px; 
-height: 450px;
+height: 500px;
 border-radius: 20px;
 border: 3px solid var(--color8);
 }
@@ -430,4 +476,86 @@ p{
     font-size:15px;
     font-style: italic;
     text-decoration: underline;
+}
+
+
+/* RESPONSIVIDADE */
+
+
+
+@media (max-width: 900px) {
+    
+    .container, .container2, .container-tabela {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 15px;
+        width: 100%;
+    }
+
+    
+    .card, .card2, .card3, .card4, .tabela {
+        width: 100% !important;
+        max-width: 100%;
+        min-width: 0;
+        height: auto; 
+        margin: 10px 0;
+    }
+
+    
+    .card img, .card2 img, .card3 img, .card4 img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    
+    .persoh1, .persoh2 {
+        padding-left: 0 !important; 
+        text-align: center;
+        width: 100%;
+    }
+
+    #esp1, #esp2 {
+        padding-right: 0 !important;
+    }
+
+    
+    .persoh3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    p {
+        padding-left: 15px; 
+        text-align: left;
+    }
+
+    
+    #logo {
+        width: 20%;
+    }
+
+    #imgfooter {
+        width: 15%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .persoh3 {
+        flex-direction: column; 
+        gap: 5px;
+    }
+
+    .precotemaki {
+        font-size: 24px;
+    }
+
+    #corh1 {
+        font-size: 25px;
+    }
 }

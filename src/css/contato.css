@@ -12,6 +12,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -28,7 +29,7 @@ main{
 
 header{
     background:rgb(66, 13, 13);
-    height: 80px;
+    height: 100px;
     padding: 20px;
     display:flex;
     justify-content:space-between;
@@ -51,7 +52,8 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-    color:var(--color8);
+    color:rgb(46, 14, 17);
+    transition: all .2s ease-out;
 }
 
 .nav-links {
@@ -295,23 +297,25 @@ form button:hover{
     color: #ffffff;
 }
 
-/* RESPONSIVO */
-
+/* RESPONSIVIDADE */
 @media(max-width: 900px){
 
     .contato-container{
         flex-direction: column;
-        width: 80%;
+        width: 90%; 
+        margin: 0 auto;
     }
 
+    
     .contato-info,
     .form-container{
-        width: 80%;
+        width: 100%; 
+        box-sizing: border-box; 
     }
 
     .contato-info{
-        width: 400px;
         padding: 40px;
+        text-align: center;
     }
 
     .form-container{
@@ -319,16 +323,37 @@ form button:hover{
     }
 
     .contato-info h1{
-        font-size: 40px;
-        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 36px; 
+    }
+
+    .contato-info p {
+        font-size: 18px;
+        margin-bottom: 20px;
     }
 
     form h2{
         font-size: 32px;
-        font-family:Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
     }
-
+    
+    
+    .info-box {
+        margin-bottom: 20px;
+    }
 }
-html, body{
-    overflow-x: hidden;
+
+
+@media(max-width: 480px){
+    .contato-info h1 {
+        font-size: 28px;
+    }
+    
+    .form-container {
+        padding: 20px;
+    }
+    
+    .input-box input,
+    .input-box textarea {
+        padding: 12px;
+    }
 }
