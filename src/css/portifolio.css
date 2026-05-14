@@ -496,12 +496,19 @@ p{
     }
 
     
-    .card, .card2, .card3, .card4, .tabela {
-        width: 100% !important;
-        max-width: 100%;
-        min-width: 0;
-        height: auto; 
-        margin: 10px 0;
+    .card, .card2, .card3, .card4{
+    width: 100% !important;
+    max-width: 100%;
+    min-width: 0;
+    height: auto; 
+    margin: 10px 0;
+    }
+
+    .tabela{
+    width: 95% !important;
+    max-width: 95%;
+    padding: 20px 10px;
+    overflow: hidden;
     }
 
     
@@ -521,9 +528,6 @@ p{
         padding-right: 0 !important;
     }
 
-    .tabela{
-        overflow: hidden;
-    }
     
     .persoh3 {
         display: flex;
