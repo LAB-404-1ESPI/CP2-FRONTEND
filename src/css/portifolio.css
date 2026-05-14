@@ -563,3 +563,44 @@ p{
         font-size: 25px;
     }
 }
+@media (max-width: 900px){
+
+    /* RODÍZIO */
+    .grade-precos{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .item-preco{
+        width: 100%;
+    }
+
+    .item-preco span:first-child{
+        font-size: 16px;
+    }
+
+    .persopreco{
+        font-size: 20px;
+    }
+
+    /* INFORMAÇÕES IMPORTANTES */
+    .perso2h1{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .perso2h1 h2{
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        padding: 0 10px;
+        word-break: break-word;
+    }
+
+    .titulocardapio2{
+        font-size: 18px;
+    }
+}
