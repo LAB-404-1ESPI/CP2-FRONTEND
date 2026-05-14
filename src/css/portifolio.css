@@ -299,6 +299,7 @@ footer{
     width: 100%;
     max-width: 900px; 
     margin: 20px auto;
+    overflow: hidden;
     padding: 20px;
     border-radius: 20px;
     border: 3px solid var(--color8);
@@ -520,6 +521,9 @@ p{
         padding-right: 0 !important;
     }
 
+    .tabela{
+        overflow: hidden;
+    }
     
     .persoh3 {
         display: flex;
